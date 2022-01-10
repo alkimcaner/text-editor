@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Text Editor</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,10 @@
     <p>by flawn</p>
     <div class="menu">
         <input type="text" id="filename" placeholder="filename">
+        <p>.</p>
+        <input type="text" id="extension" placeholder="txt" value="txt">
         <button onclick="saveFile()">save</button>
+        <p>LOAD: </p>
         <input type="file" name="" id="" onchange="openFile(this)">
     </div>
     

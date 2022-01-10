@@ -21,7 +21,8 @@ function openFile(fileInput) {
 function saveFile() {
     let textField = document.querySelector("#textfield");
     let filename = document.querySelector("#filename").value || "newfile";
-    filename += ".txt";
+    let extension = document.querySelector("#extension").value || "txt";
+    filename += "." + extension;
 
     downloadToFile(textField.value, filename, "text/plain");
 }
